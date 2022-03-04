@@ -9,7 +9,7 @@ const opts = {
     }
 }
 
-const argv = require('./../node_modules/yargs')
+const yargs = require('./../node_modules/yargs')
     .command('listar', 'Imprime en econsola la tabla de multiplicar', opts)
     .command('crear', 'Crea la tabla de multiplicar de base especificada', opts)
     .help()
@@ -17,5 +17,5 @@ const argv = require('./../node_modules/yargs')
 
 
 module.exports = {
-    argv
+    yargs
 }
